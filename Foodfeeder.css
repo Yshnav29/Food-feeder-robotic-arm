@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(fonts/poppins-regular-webfont.woff);
+  font-weight: normal;
+}
+#first {
+  height: 49.5em;
+  background-color: #302d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .home {
+  color: #fff;
+  width: 89em;
+  height: 38em;
+  background-color: #616060;
+  box-shadow: 0px -2px 8px 2px #777777;
+  border-radius: 15px;
+  width: 90%;
+}
+#first .home .navbar {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#first .home .navbar nav {
+  padding: 1em 6em 0em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 4em;
+}
+#first .home .navbar nav div.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .home .navbar nav div.head h2 {
+  font-size: 1.65rem;
+}
+#first .home .navbar nav div.info {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .home .navbar nav div.info a.text {
+  color: #fff;
+  padding: 1em 2em;
+  background-color: rgb(64, 207, 7);
+  border-radius: 30px;
+  font-weight: 600;
+}
+#first .home .navbar nav div.info a.icon {
+  display: none;
+}
+#first .home .details {
+  padding: 2em 8em 0;
+  height: 30em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(images/foodfeeder2.png) no-repeat;
+  background-size: 32em;
+  background-position: right 7em bottom 5em;
+}
+#first .home .details .wrapper {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#first .home .details .wrapper h1 {
+  font-size: 3rem;
+}
+#first .home .details .wrapper p {
+  font-size: 1.05rem;
+  line-height: 1.5em;
+}
+
+@media all and (max-width: 1038px) {
+  #first .home .navbar nav div.info a.text {
+    display: none;
+  }
+  #first .home .navbar nav div.info a.icon {
+    display: block;
+    padding: 0.7em 0.85em;
+    background-color: rgb(64, 207, 7);
+    border-radius: 50%;
+  }
+}
+@media all and (max-width: 970px) {
+  #first .home .details {
+    background-size: 55%;
+    background-position: right 15% bottom 45%;
+  }
+}
+@media all and (max-width: 750px) {
+  #first .home .navbar nav div.head h2 {
+    font-size: 1.1rem;
+  }
+  #first .home .details {
+    padding: 0 2em 0;
+  }
+  #first .home .details .wrapper {
+    width: 60%;
+  }
+  #first .home .details .wrapper h1 {
+    font-size: 2.25rem;
+  }
+}
+@media all and (max-width: 420px) {
+  #first .home .navbar nav {
+    padding: 1em 1em 0;
+  }
+  #first .home .navbar nav div.head h2 {
+    font-size: 1rem;
+  }
+  #first .home .details {
+    padding: 0 2em 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-position: right 50% bottom 10%;
+  }
+  #first .home .details .wrapper {
+    margin-top: -8em;
+    width: 100%;
+  }
+  #first .home .details .wrapper h1 {
+    font-size: 2.25rem;
+  }
+}/*# sourceMappingURL=Foodfeeder.css.map */
